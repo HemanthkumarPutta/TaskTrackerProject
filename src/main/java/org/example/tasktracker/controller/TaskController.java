@@ -35,7 +35,7 @@ public class TaskController {
         return taskMapper.toDto(createdTask);
     }
 
-    @GetMapping(path = "/{task_id")
+    @GetMapping(path = "/{task_id}")
     public Optional<TaskDto> getTask(
             @PathVariable("task_list_id") UUID taskListId,
             @PathVariable("task_id") UUID taskId
